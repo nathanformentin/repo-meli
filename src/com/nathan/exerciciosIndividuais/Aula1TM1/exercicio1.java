@@ -1,4 +1,4 @@
-package com.nathan.aula1;
+package com.nathan.exerciciosIndividuais.Aula1TM1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 //exercicio 1 - verificacao de numeros pares
-public class Main {
+class Main {
 
     public static void main(String[] args) {
 

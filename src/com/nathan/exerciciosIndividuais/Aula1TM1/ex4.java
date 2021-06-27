@@ -1,7 +1,9 @@
+package com.nathan.exerciciosIndividuais.Aula1TM1;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exercicio4 {
+class Exercicio4 {
     /*
     Desenvolva um programa para mostrar por console os primeiros n números primos, sendo um valor que o usuário irá inserir pelo console.
      */

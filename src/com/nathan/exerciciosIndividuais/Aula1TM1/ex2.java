@@ -1,8 +1,10 @@
+package com.nathan.exerciciosIndividuais.Aula1TM1;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Atividade1{
+class Atividade1{
 
     /*
     Desenvolva um programa para mostrar os primeiros n números múltiplos de m,

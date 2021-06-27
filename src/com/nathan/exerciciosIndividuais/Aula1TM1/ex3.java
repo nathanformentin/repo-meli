@@ -1,6 +1,4 @@
-package br.com.aula1;
-
-/*Desenvolva um programa para informar se um um número n é
+package com.nathan.exerciciosIndividuais.Aula1TM1;/*Desenvolva um programa para informar se um um número n é
 primo ou não, sendo n um valor que o usuário irá inserir pelo console.
 Lembre-se que um número é primo quando só é divisível por 1 e por si mesmo.
 */
