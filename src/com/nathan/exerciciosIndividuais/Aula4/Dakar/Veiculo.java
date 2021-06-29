@@ -1,6 +1,6 @@
 package com.nathan.exerciciosIndividuais.Aula4.Dakar;
 
-public class Veiculo {
+public abstract class Veiculo {
 
     double velocidade;
     double aceleracao;
