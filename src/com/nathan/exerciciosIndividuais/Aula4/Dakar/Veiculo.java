@@ -16,6 +16,17 @@ public class Veiculo {
         this.placa = placa;
     }
 
+    @Override
+    public String toString() {
+        return "velocidade=" + velocidade +
+                ", aceleracao=" + aceleracao +
+                ", anguloDeGiro=" + anguloDeGiro +
+                ", placa='" + placa + '\'' +
+                ", peso=" + peso +
+                ", numeroRodas=" + numeroRodas +
+                '}';
+    }
+
     public String getPlaca() {
         return placa;
     }
