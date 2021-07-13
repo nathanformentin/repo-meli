@@ -9,5 +9,4 @@ class ObterDiplomaApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }

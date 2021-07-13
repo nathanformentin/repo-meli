@@ -1,6 +1,7 @@
 package com.meli.obterdiploma.dtos;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class analiseAlunoDTO {
 
@@ -38,6 +39,16 @@ public class analiseAlunoDTO {
         this.student = alunoDTO;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        analiseAlunoDTO that = (analiseAlunoDTO) o;
+        return Objects.equals(message, that.message) && Objects.equals(average, that.average) && Objects.equals(student, that.student);
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(message, average, student);
+    }
 }
