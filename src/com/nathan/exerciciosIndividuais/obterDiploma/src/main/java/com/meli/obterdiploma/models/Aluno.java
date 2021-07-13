@@ -1,14 +1,24 @@
 package com.meli.obterdiploma.models;
-
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Aluno {
 
+
     String nome;
-    Map<String, Double> notas;
+    List<Subject> notas = new ArrayList<>();
+
+    public Aluno(String name, List<Subject> subjects) {
+        this.nome = nome;
+        this.notas = subjects;
+    }
 
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     @Override
@@ -19,15 +29,11 @@ public class Aluno {
                 '}';
     }
 
-    public Map<String, Double> getNotas() {
+    public List<Subject> getNotas() {
         return notas;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setNotas(Map<String, Double> notas) {
+    public void setNotas(List<Subject> notas) {
         this.notas = notas;
     }
 }

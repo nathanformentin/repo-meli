@@ -1,13 +1,15 @@
 package com.meli.obterdiploma.dtos;
 
+import java.math.BigDecimal;
+
 public class MensagemDTO {
 
     String nome;
-    double media;
+    Double media;
     String mensagem;
 
 
-    public MensagemDTO(String nome, double media, String mensagem) {
+    public MensagemDTO(String nome, Double media, String mensagem) {
         this.nome = nome;
         this.mensagem = mensagem;
         this.media = media;
@@ -21,11 +23,11 @@ public class MensagemDTO {
         this.nome = nome;
     }
 
-    public double getMedia() {
+    public Double getMedia() {
         return media;
     }
 
-    public void setMedia(double media) {
+    public void setMedia(Double media) {
         this.media = media;
     }
 
