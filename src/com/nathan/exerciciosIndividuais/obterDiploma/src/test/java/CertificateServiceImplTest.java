@@ -3,14 +3,10 @@ import com.meli.obterdiploma.dtos.analiseAlunoDTO;
 import com.meli.obterdiploma.models.Subject;
 import com.meli.obterdiploma.services.AlunoService;
 import org.junit.jupiter.api.*;
-import org.springframework.web.bind.MethodArgumentNotValidException;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CertificateServiceImplTest {
 
@@ -25,16 +21,6 @@ public class CertificateServiceImplTest {
 
         //act & assert
         assertEquals(alunoService.imprimeAnaliseDiploma(aluno).getAverage(), 9.5);
-    }
-
-    @Test
-    void shouldThrowInvalidArgException() {
-        AlunoService alunoService = new AlunoService();
-        Subject nota1 = new Subject("materia1", 9.0);
-        Subject nota2 = new Subject("materia2", 10.0);
-        List<Subject> subjectList = Arrays.asList(nota1, nota2);
-        AlunoDTO aluno = new AlunoDTO(null, subjectList);
-        assertThrows(MethodArgumentNotValidException.class, () -> alunoService.imprimeAnaliseDiploma(aluno));
     }
 
     @Test

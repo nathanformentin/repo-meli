@@ -4,10 +4,11 @@ import javax.validation.constraints.*;
 public class Subject {
 
     @NotBlank
+    @NotNull
     @Pattern(regexp = "([a-zA-Z]|( ))*", message = "O nome da disciplina deve ter apenas letras e espacos.")
     @Size(min = 8, max = 64, message = "O nome da disciplina deve ter no minimo oito caracteres e no maximo 64 caracteres.")
     String subject;
-
+    @NotNull
     @DecimalMin(value = "0", message = "O valor deve ser superior ou igual a zero.")
     @DecimalMax(value = "10", message = "O valor deve ser inferior ou igual a dez.")
     Double note;

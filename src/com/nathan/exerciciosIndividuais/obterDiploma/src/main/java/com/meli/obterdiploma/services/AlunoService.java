@@ -3,7 +3,6 @@ package com.meli.obterdiploma.services;
 import com.meli.obterdiploma.dtos.AlunoDTO;
 import com.meli.obterdiploma.dtos.analiseAlunoDTO;
 import com.meli.obterdiploma.dtos.MensagemDTO;
-import com.meli.obterdiploma.models.Aluno;
 import org.springframework.stereotype.Service;
 
 import javax.validation.Valid;

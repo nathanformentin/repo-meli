@@ -6,6 +6,7 @@ import com.meli.obterdiploma.models.Subject;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.List;
@@ -23,6 +24,10 @@ public class AlunoDTO {
     public AlunoDTO(String name, List<Subject> notas) {
         this.nome = name;
         this.notas = notas;
+    }
+
+    public AlunoDTO() {
+
     }
 
     public String getNome() {
